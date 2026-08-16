@@ -1,0 +1,133 @@
+% Required {
+	%Document class and packages
+	\documentclass[legalpaper]{ltxdoc}
+	\usepackage{graphicx}
+	\usepackage{hyperref}
+	\usepackage{multicol}
+	\usepackage{lipsum}
+	\usepackage{xcolor}
+	\usepackage{fancyhdr}
+	\usepackage{ulem}
+	\usepackage{array}
+	
+	%Customization
+	\usepackage{fontspec}
+		\setmainfont{Cascadia Mono}
+	\usepackage[hmargin={1.5 cm, 1.5cm}, top=2cm, marginpar=1.5cm]{geometry}
+	\pagestyle{fancy}
+	\renewcommand{\arraystretch}{1.5}
+		
+		
+	%% Make underscore available outside math mode.
+	\catcode`\_=\active
+	\def_{\relax\ifmmode\sb \else \_\fi}
+	% } End Required
+
+%Document Start
+\begin{document}
+	%Customization
+	\pagecolor{gray}
+	%Title, Authors
+	\title{\textsf{DATASPIRE GAME\\PROGRESS DOCUMENTATION}}
+	\author{Kenneth W.\\Vance B.}
+	\maketitle
+	
+	\pagebreak
+	
+	%%2023
+	\noindent \begin{tabular}{ c|m{16cm} }
+		\huge \textbf{2023} \normalsize & \\
+		\hline
+		SEP. 16 & Soft start, initial documentation and GitHub repository created. \\
+		\hline
+		OCT. 10 & Documentation update with additional information. \\
+		\hline
+		DEC. 27 & Development started in Godot, initial prototyping for the movement system. \\
+		\hline
+		DEC. 30 & Advanced player movement: Dashing, Bunny-hopping, Sliding, Crouching, and Jumping. \\
+		\hline
+	\end{tabular}\\\\\\
+	
+	%%2024
+	\noindent \begin{tabular}{ c|m{16cm} }
+		\huge \textbf{2024} \normalsize & \\
+		\hline
+		JAN. 07 & Prototype movement system complete, further refinement in progress. \\
+		\hline
+		FEB. 26 & Movement system rework \#1 complete. Notably, the stair-stepping functionality was updated. \\
+		\hline
+		MAR. 06 & Movement system rework \#2 complete. Notably, the number of movement options was reduced to put more emphasis on the fundamental movement options. \\
+		\hline
+		APR. 08 & Project refactor \#1 complete. Re-organized file layout and switched from Qodot 4 addon to Func_Godot addon for Trenchbroom map importing. \\
+		\hline
+		APR. 15 & Player HUD: Dash charges, Healthbar, Motion lines, etc. \\
+		\hline
+		APR. 29 & Map interaction: Cratering, Portals, Water, Ziplines, and Ladders. \\
+		\hline
+		MAY. 10 & 1st Weekly Meeting: Enemy AI prototyping, Navigation mesh creation, Combat prototyping. \\
+		\hline
+		MAY. 17 & 2nd Weekly Meeting: Elemental combat prototyping, User interface, Combat mechanics, and game aesthetic. \\
+		\hline
+		MAY. 31 & 3rd Weekly Meeting: Enemy AI work, Virus, Malight, and ICEMAN AI navigation. \\
+		\hline
+		AUG. 07 & Began work on allowing AI to navigate vertical (walls, ceilings) surfaces with custom navigation regions. \\
+		\hline
+		AUG. 08 & Finished vertical AI navigation work. \\
+		 & Began work on the new command/debug console. \\
+		\hline
+		AUG. 09 & Reworked main character's backstory to justify attack animations. \\
+		& Continued work on new command/debug console. \\
+		& Reworked player controller to allow for different orientations (dynamic gravity). \\
+		& Fixed a glitch where you could steer the character while sliding. \\
+		\hline
+		AUG. 10 & Fixed the scaffold metal material being opaque when behind water. \\
+		& Finished player controller rework. \\
+		\hline
+		AUG. 19 & Updated DATASPIRE to Godot 4.3. \\
+		& Fixed broken shaders as a result of update. \\
+		& Fixed incorrect player position as a result of update. \\
+		& Fixed incorrect player orientation and gravity calculations (mainly incorrectly used up_direction and gravity_vector). \\
+		\hline
+		AUG. 20 & Refined the water shader and experimented with different versions. \\
+		\hline
+		AUG. 22 & Added additional commands to command/debug console. \\
+		& Pushed all changes to combat-elements branch. \\
+		\hline
+		AUG. 25 & Concept art and art reference storage reorganzied. \\
+		\hline
+		AUG. 27 & Added additional documentation. \\
+		& Pushed to combat-elements. \\
+		& Merged with main. \\
+		\hline
+	\end{tabular}
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

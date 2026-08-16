@@ -1,0 +1,95 @@
+% Required {
+	%Document class and packages
+	\documentclass[legalpaper]{ltxdoc}
+	\usepackage{graphicx}
+	\usepackage{hyperref}
+	\usepackage{multicol}
+	\usepackage{lipsum}
+	\usepackage{xcolor}
+	\usepackage{fancyhdr}
+	\usepackage{ulem}
+	
+	
+	%Customization
+	\usepackage{fontspec}
+	\setmainfont{Cascadia Mono}
+	\usepackage[hmargin={1.5 cm, 1.5cm}, top=2cm, marginpar=1.5cm]{geometry}
+	\hypersetup{colorlinks, linkcolor=darkgray, urlcolor=darkgray}
+	\pagestyle{fancy}
+	\fancyhf{} % clear all fields
+	\fancyhead[L]{\rightmark}
+	\fancyhead[R]{\thepage}
+	\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+	\renewcommand{\subsectionmark}[1]{%
+		\markright{\MakeUppercase{\thesubsection.\ #1}}}%
+	% } End Required
+
+%Document Start
+\begin{document}
+	
+	%Title, Authors
+	\title{\textsf{DATASPIRE\\Project Proposal}}
+	\author{Kenneth W.\\Vance B.}
+	\maketitle
+	
+	\section{Team Members and Roles}
+	\begin{itemize}
+		\item \underline{Lead Developer - Kenneth W.}
+		\item[] Programming: Player Movement, AI Navigation, Map Interaction, User Interface, Enemy Faction
+		\item[] Everything Else: Art, Map-making, Story, Characters, etc.\\
+		
+		\item \underline{Developer - Vance B.}
+		\item[] Programming: Enemies, Combat, Elemental Combat System
+	\end{itemize}
+	
+	\section{Project Goal}
+	{\LARGE How effective is Godot for 3D game development?}\\
+	
+	\noindent Our current goal is to determine how effective Godot is for 3D game development. For context, Godot is an open-source game engine that spiked in popularity with the release of Godot 4 in March 2023. Most popular Godot-made games are 2D, with a few 3D games in early stages of development. We would like to develop a fully-functional 3D game in Godot, keeping track of which parts of the game engine we think are in need of improvement and which parts are adequate or exceptional. Of course, we are not expecting to get the full game done before the ACM conference, but we should be able to get a large enough portion done to gather the data we need to come to a verdict on how good Godot is for 3D game development.\\
+	
+	We have already noted some general areas of improvement:
+	\begin{itemize}
+		\item AI Navigation
+		\subitem The generation of navigation meshes is inconsistent and not always compatible with the various map-making workflows in use by 3D Godot developers. Along with this, Godot does not have support for vertical navigation (i.e. walls and ceilings) mesh generation out of the box. Vertical navigation meshes must be created in a separate program such as Blender and imported into Godot where they need to be connected to standard navigation meshes with navigation links.
+		\subitem AI Pathfinding was not built with vertical navigation in mind however, resulting in unexpected behavior when AI is put onto a vertical navigation mesh.
+		
+		\item Player Movement
+		\subitem Godot does not feature native stair-stepping support. A proposal for it has been in discussion for a couple years, however no standardized method has been developed and implemented into the engine yet.
+		
+		\item Documentation and Tutorial-spaces
+		\subitem Godot's official documentation, \textit{Godot Docs}, is well made and is directly integrated into the code editor.
+		\subitem Unfortunately in terms of online tutorials, Godot severely lags behind other game engines. Compared to older game engines such as Unreal Engine and Unity, which have had time to develop communities, Godot lacks tutorials for basic and advanced game design techniques and implementations. Many existing Godot tutorials are also outdated as fundamental parts of the engine were changed from Godot 3 to Godot 4, removing a large chunk of older tutorials. It will take a long time for Godot to develop its community, and many young and/or inexperienced developers may be turned away from Godot due to a lack of help.
+	\end{itemize}
+	
+	
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

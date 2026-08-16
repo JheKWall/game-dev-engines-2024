@@ -1,0 +1,41 @@
+---
+# The two dashed lines above are REQUIRED front matter.
+# Without them Jekyll copies this file verbatim, the @import never runs,
+# and the overrides below silently do nothing.
+---
+
+@import "{{ site.theme }}";
+
+/* Wide tables scroll inside their own box instead of overflowing the page.
+   Every report in this portfolio leans on 4-5 column tables that would
+   otherwise run off-screen on a phone. */
+.main-content table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+/* Let prose cells wrap rather than forcing one very long line. */
+.main-content table td:not(:first-child) {
+  white-space: normal;
+  min-width: 12rem;
+}
+
+/* Long code lines scroll rather than stretch the layout. */
+.main-content pre {
+  overflow-x: auto;
+}
+
+/* Screenshots and charts stay inside the column. */
+.main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Slightly wider measure than Cayman's default - these are dense reports. */
+.main-content {
+  max-width: 72rem;
+}

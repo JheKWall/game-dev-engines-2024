@@ -1,0 +1,9 @@
+theme: jekyll-theme-cayman
+title: Game Development Engines 2024
+description: >-
+  Comparing Godot, Unity, and Unreal Engine from a year of building one 3D game.
+  A senior capstone experience report, with first-hand and researched claims
+  kept separate.
+
+exclude:
+  - EXTRACTION-MANIFEST.md
